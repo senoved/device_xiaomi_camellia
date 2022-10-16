@@ -35,10 +35,14 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
 <<<<<<< HEAD
+<<<<<<< HEAD
         RefreshUtils.startService(context);
 =======
         RefreshUtils.initialize(context);
         ThermalUtils.startService(context);
 >>>>>>> 12f81fd (camellia: parts: Enable thermal settings)
+=======
+        RefreshUtils.initialize(context);
+>>>>>>> b109b01 (camellia: parts: Refresh rate utils housekeeping)
     }
 }
