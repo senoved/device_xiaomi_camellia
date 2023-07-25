@@ -5,6 +5,7 @@
 //
 
 cc_library_shared {
+<<<<<<< HEAD
     name: "libshim_sensors",
     whole_static_libs: [
         "android.hardware.sensors@1.0-convert"
@@ -16,3 +17,17 @@ cc_library_shared {
     ],
     vendor: true
 }
+=======
+    name: "libshim_sink",
+    srcs: ["libshim_sink.cpp"],
+    compile_multilib: "64",
+    shared_libs: [
+        "libaudioclient",
+    ],
+    header_libs: [
+        "libaudioclient_headers",
+        "libmedia_headers",
+    ],
+}
+
+>>>>>>> 535cce97 (camellia: Add shim for proprietary AudioTrack constructor)
