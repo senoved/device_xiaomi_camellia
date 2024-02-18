@@ -12,13 +12,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/camellia/device.mk)
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# RisingOs Flags
+RISING_CHIPSET := MT6833
+RISING_MAINTAINER := dikiawan9
+WITH_GMS := false
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+
+# Flags 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := aosp_camellia
+# Device identifier. This must come after all inclusions
+PRODUCT_NAME := lineage_camellia
 PRODUCT_DEVICE := camellia
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
