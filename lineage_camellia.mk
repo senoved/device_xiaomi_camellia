@@ -16,6 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 MATRIXX_MAINTAINER := diksy9
 MATRIXX_CHIPSET := MT6833
+WITH_GMS := false
 MATRIXX_BATTERY := 5000mAh
 MATRIXX_DISPLAY := 1080x2400
 
