@@ -14,7 +14,7 @@ $(call inherit-product, device/xiaomi/camellia/device.mk)
 # Inherit some common MatrixxUI stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-MATRIXX_MAINTAINER := ramshell688
+MATRIXX_MAINTAINER := diksy9
 MATRIXX_CHIPSET := MT6833
 MATRIXX_BATTERY := 5000mAh
 MATRIXX_DISPLAY := 1080x2400
