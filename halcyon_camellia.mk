@@ -11,19 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/camellia/device.mk)
 
-# Inherit some common MatrixxUI stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-MATRIXX_MAINTAINER := ramshell688
-MATRIXX_CHIPSET := MT6833
-MATRIXX_BATTERY := 5000mAh
-MATRIXX_DISPLAY := 1080x2400
+# Inherit some common Halcyon stuff.
+TARGET_DISABLE_EPPE := true
+$(call inherit-product, vendor/halcyon/config/common.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := matrixx_camellia
+PRODUCT_NAME := halcyon_camellia
 PRODUCT_DEVICE := camellia
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

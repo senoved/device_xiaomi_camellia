@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_camellia.mk
+    $(LOCAL_DIR)/halcyon_camellia.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_camellia-user \
-    lineage_camellia-userdebug \
-    lineage_camellia-eng
+    halcyon_camellia-user \
+    halcyon_camellia-userdebug \
+    halcyon_camellia-eng
